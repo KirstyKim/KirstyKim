@@ -1,0 +1,132 @@
+<!DOCTYPE html> <!--느낌표+탭-->
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+        .box {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .text {
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: 24px;
+            line-height: 36px;
+            width: 500px;
+            word-break: keep-all;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .title {
+            font-family: 'Black Han Sans', sans-serif;
+            position: absolute;
+        }
+
+        .one {
+            color: aqua;
+            font-size: 100px;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            word-break: keep-all;
+            animation-name: move;
+            animation-duration: 2s;
+            /**1000ms=1s**/
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+        .two {
+            color: magenta;
+            top: 505px;
+            /**vh(viewport height),vw(viewport width)쓰면 화면크기에 따라 사이즈도 같이 달라짐**/
+            left: 306px;
+            font-size: 80px;
+            animation-name: move2;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+
+            /**애니메이션 넣기**/
+            0% {
+                left: 5%;
+                font-size: 100px;
+                color: aqua
+            }
+
+            50% {
+                left: 50%;
+                font-size: 100px;
+                color: magenta
+            }
+
+            100% {
+                left: 5%;
+                font-size: 100px;
+                color: yellow
+            }
+        }
+
+        @keyframes move2 {
+            0% {
+                top: 600px;
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 600px;
+            }
+
+        }
+
+        @media screen and (max-width:768px) {
+            .text {
+                font-size: 14px;
+                line-height: 20px;
+                width: 280px;
+            }
+
+            .two {
+                color: greenyellow;
+                font-size: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <dov class="text">
+            소개<br>
+            디자인아카데미는 관계에서 삶과 배움의 방법을 찾고, 사회에서 잊힌 교육의 본질을 바로 세우려는 의지로 설립된 공동체입니다. 2014년 온라인 컨텐츠 강의를 시작으로 2017년 부터는 오프라인 공간에서 운영되고 있습니다. 디자인학교는 교육이 가진 존재의 의미, 즉 ‘학문을 배우고 연구하는 곳’이라는 본래의 가치를 충실히 실현하고자 합니다.<br><br>
+            수업환경<br>
+            디자인아카데미에는 20대부터 60대까지 다양한 학생들이 모여 공부하고 있습니다. 강의는 일과 병행하며 듣는 분들을 위해 주로 야간에 진행됩니다. 주중에 진행되는 수업은 주로 오후 7시 30분~10시 30분입니다.
+        </dov>
+    </div>
+    <div class="title one">디학</div>
+    <div class="title two">디학</div>
+    <div class="title">디학</div>
+    <div class="title">디학</div>
+    <div class="title">디학</div>
+    <div class="title">디학</div>
+    <div class="title">디학</div>
+    <div class="title">디학</div>
+    <div class="title">디학</div>
+
+</body></html>
